@@ -11,8 +11,8 @@ Chart-building practice notebooks part of a structured data science sprint.
 - [x] Pie Charts in Matplotlib
 - [x] Stack Plots in Matplotlib
 - [x] Histograms in Matplotlib
-- [ ] Scatter Plots in Matplotlib
-- [ ] Subplots in Matplotlib
+- [x] Scatter Plots in Matplotlib
+- [x] Subplots in Matplotlib
 - [ ] Introduction to Seaborn
 - [ ] Basic Plot Types in Seaborn
 
@@ -22,6 +22,8 @@ Chart-building practice notebooks part of a structured data science sprint.
 - `Pie Charts in Matplotlib.ipynb` — plt.pie(), labels, colors, explode, shadow, startangle, autopct='%1.1f%%', wedgeprops, donut charts
 - `Stack Plots in Matplotlib.ipynb` — plt.stackplot(), *args for multiple y-values, labels, colors, alpha transparency, legend positioning
 - `Histograms in Matplotlib.ipynb` — plt.hist(), bins, edgecolor, plt.axvline() for reference lines, frequency distribution visualization
+- `Scatter Plots in Matplotlib.ipynb` — plt.scatter(), size (s=), color (c=), colormap, alpha, correlation visualization
+- `Subplots in Matplotlib.ipynb` — plt.subplots(), fig/ax syntax, axes indexing, sharing axes, tight_layout()
 
 ## Notes
 - Format strings ('ro--') are compact but don't allow size control — use readable format (color, linestyle, marker, ms) when customization needed.
@@ -32,6 +34,8 @@ Chart-building practice notebooks part of a structured data science sprint.
 - Pie charts: avoid when comparing many slices — use bar charts instead. Use `explode` to highlight, `autopct='%1.1f%%'` for percentages, `startangle` to rotate.
 - `plt.stackplot(x, y1, y2, y3)` — shows cumulative totals over time; use `alpha` for transparency when colors overlap visually.
 - Histograms show frequency distribution of continuous data; `bins` controls granularity, `axvline()` marks reference points like mean/median.
+- Scatter plots show correlation between two continuous variables; use `c=` + colormap to add a third dimension.
+- Subplots: always use `fig, ax = plt.subplots(rows, cols)` syntax — gives full control over each axis independently.
 
 ## Assignment: Pie vs Bar Chart Comparison
 - `Filename` — assignment.py
