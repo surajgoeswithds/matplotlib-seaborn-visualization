@@ -13,8 +13,8 @@ Chart-building practice notebooks part of a structured data science sprint.
 - [x] Histograms in Matplotlib
 - [x] Scatter Plots in Matplotlib
 - [x] Subplots in Matplotlib
-- [ ] Introduction to Seaborn
-- [ ] Basic Plot Types in Seaborn
+- [x] Introduction to Seaborn
+- [x] Basic Plot Types in Seaborn
 
 ## Notebooks
 - `Intro To Matplotlib.ipynb` — plt.plot(), xlabel/ylabel/title, legend(), grid(), format strings ('ro--'), readable format (color, linestyle, marker, ms, linewidth), plt.show()
@@ -24,6 +24,8 @@ Chart-building practice notebooks part of a structured data science sprint.
 - `Histograms in Matplotlib.ipynb` — plt.hist(), bins, edgecolor, plt.axvline() for reference lines, frequency distribution visualization
 - `Scatter Plots in Matplotlib.ipynb` — plt.scatter(), size (s=), color (c=), colormap, alpha, correlation visualization
 - `Subplots in Matplotlib.ipynb` — plt.subplots(), fig/ax syntax, axes indexing, sharing axes, tight_layout()
+- `Seaborn intro.ipynb` — seaborn vs matplotlib, sns.set_theme(), built-in datasets, high-level API
+- `Seaborn plots.ipynb` — sns.barplot(), sns.histplot(), sns.scatterplot(), sns.boxplot(), sns.heatmap(), sns.pairplot(), hue parameter for grouping
 
 ## Notes
 - Format strings ('ro--') are compact but don't allow size control — use readable format (color, linestyle, marker, ms) when customization needed.
@@ -36,6 +38,8 @@ Chart-building practice notebooks part of a structured data science sprint.
 - Histograms show frequency distribution of continuous data; `bins` controls granularity, `axvline()` marks reference points like mean/median.
 - Scatter plots show correlation between two continuous variables; use `c=` + colormap to add a third dimension.
 - Subplots: always use `fig, ax = plt.subplots(rows, cols)` syntax — gives full control over each axis independently.
+- Seaborn is built on Matplotlib — use Seaborn for statistical plots with less code, drop to Matplotlib when you need fine-grained control.
+- `hue=` parameter adds a categorical grouping dimension to any Seaborn plot without extra code.
 
 ## Assignment: Pie vs Bar Chart Comparison
 - `Filename` — assignment.py
